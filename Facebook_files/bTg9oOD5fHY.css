@@ -1,0 +1,114 @@
+/*!CK:141745128!*//*1387292911,178158627*/
+
+.appsFeedSubHeader{padding-left:23px}
+div#contentCol.appFeedFilter div#rightCol{padding-top:0}
+div#contentCol.appFeedFilter div#contentArea div#pagelet_home_stream{border-top:1px solid #ccc}
+.friendListHeader{height:41px;padding-top:4px}
+.friendListHeader .editForm, .friendListHeaderEditMode .staticName, .friendListHeaderEditMode .friendListSubHeader, .friendListManage .updateType, .updateTypesExpanded .chooseUpdateTypes{display:none}
+.friendListHeaderEditMode .editForm, .updateTypesExpanded .updateType{display:block}
+.friendListHeader .friendListName .nameInput{font-size:13px;width:140px}
+.friendListSubHeader{padding-left:23px}
+.friendListHeader .timelineUnitContainer .uiSelector{padding-left:5px;margin-left:-12px;margin-top:-3px}
+.friendListHeader .fbAudienceHover{margin-left:-1px}
+div#contentCol.friendListFilter{padding-top:15px !important}
+div#contentCol.friendListFilter div#rightCol{padding-top:0}
+.friendListFilterNullState{padding-top:40px;text-align:center}
+.friendListRestrictedNullState{border-top:1px solid #ccc;font-size:12px;padding-top:40px;text-align:justify}
+.notificationSelector .uiSelectorButton .img{margin-top:2px;margin-left:2px}
+.friendListTypeaheadBox .plusIcon{position:absolute;top:7px;left:11px}
+.friendListTypeaheadBox .friendListAddTypeahead{background-color:transparent}
+.friendListAddTypeahead .textInput{padding-left:15px}
+.friendListAddTypeahead .noPadding{padding-left:0}
+.friendListAddTypeahead{margin-right:8px}
+.friendListTypeaheadBox{position:relative}
+.home #rightCol .friend_list_new_feed_header{height:34px;margin-bottom:5px;padding-top:5px;padding-right:20px}
+.smartListTip{cursor:default;font-weight:normal}
+.empty .fbFriendListMemberBoxFacepile,
+.fbFriendListNoMembersMessage{display:none}
+.empty .fbFriendListNoMembersMessage{display:block}
+.fbFriendListMemberList .fbFriendListMember{height:32px;vertical-align:middle}
+.listAttachment{outline:none}
+.listAttachmentList{line-height:16px}
+.listAttachment .listCreatorLink a{color:#6b84b4}
+.art_grid{position:relative;overflow:hidden}
+.art_grid_inner .music_artwork{float:left}
+.art_grid_inner{position:absolute;left:0;top:0;right:-4px;bottom:-4px}
+.featured_song .track_title{font-weight:bold;color:#333}
+.featured_song_artists a{color:gray}
+.featured_song_header{margin-bottom:2px}
+.button_medium.artwork_button .button_anchor .music_button_img{width:30px;height:30px}
+.button_medium.artwork_button .music_button_img{background-image:url(/rsrc.php/v2/y1/r/ZEZO8bYyQlr.png);background-repeat:no-repeat;background-size:auto;background-position:0 0}
+.button_medium.artwork_button .button_anchor:active .music_button_img, .button_medium.artwork_button .button_anchor:hover .music_button_img{background-image:url(/rsrc.php/v2/y1/r/ZEZO8bYyQlr.png);background-repeat:no-repeat;background-size:auto;background-position:0 -30px}
+.music_playing .button_medium.artwork_button .music_button_img{background-image:url(/rsrc.php/v2/y1/r/ZEZO8bYyQlr.png);background-repeat:no-repeat;background-size:auto;background-position:0 -60px}
+.music_playing .button_medium.artwork_button .button_anchor:hover
+.music_button_img, .music_playing .button_medium.artwork_button .button_anchor:active
+.music_button_img{background-image:url(/rsrc.php/v2/y1/r/ZEZO8bYyQlr.png);background-repeat:no-repeat;background-size:auto;background-position:0 -90px}
+.music_loading .button_medium.artwork_button .button_anchor:active
+.music_button_img, .music_loading .button_medium.artwork_button .button_anchor:hover
+.music_button_img, .music_loading .button_medium.artwork_button .music_button_img{background-image:url(/rsrc.php/v2/y1/r/ZEZO8bYyQlr.png);background-repeat:no-repeat;background-size:auto;background-position:0 -120px}
+.music_loading .button_medium.artwork_button .music_button_img_wrap
+.music_button_img.music_loader{background:url(/rsrc.php/v2/yp/r/DrGcdjdlpCl.gif) 50% no-repeat}
+._584z{height:32px;width:32px}
+._584-{height:50px;width:50px}
+._584_{height:90px;width:90px}
+._5850{height:196px;width:196px}
+._5851{height:103px;width:103px}
+._5852{height:154px;width:154px}
+._5bsq{height:138px;width:138px}
+._5854{height:96px;width:96px}
+._5a3h{height:99px;width:99px}
+.music_song_item .track_title{color:#000}
+.music_song_item .track_artists{display:inline}
+.hidePlay .playButton{display:none}
+.song_detailed{border-top:1px solid #e9e9e9;padding-top:5px;padding-bottom:5px}
+.songListPager{position:relative}
+.songListPager .loading{display:none}
+.songListPagerOuter.async_saving .songListPager .loading{position:absolute;display:inline;left:100%;top:50%;margin:-5px 0 0 5px}
+._5dn0, ._5egu{border:1px solid #e5e5e5;width:415px}
+.tickerDialogContent ._5dn0, .tickerDialogContent ._5egu{width:281px}
+._6xi{width:196px}
+._6xj{width:129px}
+._56xs._5b19 ._57_1{left:168px}
+._56xs ._5b1a{height:180px}
+._56xt._5b19 ._57_1{left:101px}
+._56xt ._5b1a{height:175px}
+._56xs._5b19 ._57_1{left:168px}
+.tickerDialogContent ._5b1a{height:auto}
+.tickerDialogContent ._56xs._5b19 ._57_1{left:101px}
+.tickerDialogContent ._56xt._5b19 ._57_1{left:75px}
+._4zpu{display:inline-block}
+._4zpu ._4-py{display:inline-block;margin:0}
+._4oa2{color:#666;padding-bottom:10px}
+._4oa2 .uiContextualLayer{margin-bottom:5px}
+._5fzb .uiOverlayFooter .uiGrid{width:100%}
+._5fzb .uiOverlayFooterMessage{width:auto}
+._5fza{display:inline-block}
+._5fza._5fzc{display:block}
+._5fz9{resize:none}
+._5fzb ._5ant{padding:0}
+._3qya{height:130px;width:130px}
+._4i1r{min-height:78px}
+._3qyc{width:130px}
+._51mc{margin-top:3px}
+.achievementLockedContainer{position:relative}
+.achievementLockedOverlay{z-index:1;position:absolute;right:21px;top:18px;pointer-events:none}
+.achievementPreview{display:block;margin-right:1px}
+.achievementLockedContainer .achievementPreview{opacity:.3}
+.achievementTooltip{display:block}
+.uiStreamStoryAttachmentOnly .storyContent{margin-bottom:0}
+.uiStreamStoryAttachmentOnly .storyContent{margin-left:-18px}
+.homeWiderContent .uiStreamStoryAttachmentOnly .uiStreamSubstory .storyContent{margin-left:0}
+.uiStreamStoryAttachmentOnly .uiStreamAttachments{margin:0}
+.selectedStoryIndicator{background-color:#ccc;display:none;left:0;top:0;position:absolute;height:100%;width:3px}
+.selectedStorySimple .selectedStoryIndicator{display:block}
+#pagelet_composer .selectedStoryIndicator{left:-18px;padding-bottom:19px;top:-14px}
+li.selectedStorySimple,
+div.selectedStorySimple{position:relative}
+.UIIntentionalStream_Error{display:none;padding-top:2px;padding-bottom:8px}
+.UIIntentionalStream_HiddenInfo{float:right}
+.UIIntentionalStream_AutoUpdate{margin:5px}
+.UIIntentionalStream_AutoUpdateMessage,
+.UIIntentionalStream_AutoUpdateControl{float:right}
+
+#bootloader_hzPXZ { height: 42px; }
+.bootloader_hzPXZ { display:block !important; }

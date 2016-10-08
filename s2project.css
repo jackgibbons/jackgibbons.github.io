@@ -1,0 +1,234 @@
+/* 
+Jack Gibbons 13 Dec 2013, Semester Project
+*/
+
+/*Style for the entire body*/
+body {
+	background-color:#BEB2EC;
+	color:black;
+	margin:20px;
+	}
+
+/*Style for the header div*/
+#header {
+	background-color:#FFE67C;
+	font-family:Tahoma;
+	font-size:175%;
+	width:100%;
+	float:left;
+	-webkit-animation:pageloader 2s;
+	}
+
+/*Style for the links div*/
+#links {
+	background-color:#DBFAB4;
+	}
+	
+/*Style for the main div*/
+#main {
+	background-color:white;
+	width:100%;
+	overflow:hidden;
+}
+
+/*Style for the main div on the parts page*/
+#mainforpart{
+	background-color:white;
+	width:100%;
+	overflow:hidden;
+	height:750px;
+	}
+
+/*Style for the padding div, which adds padding to the main div*/
+.padding {
+	padding:20px;
+	}
+
+/*Style for the headerpadding div, which adds padding to the header div*/
+.headerpadding {
+	padding-left:100px;
+	}
+
+/*Style for the image of gretsch guitar on the idex page*/	
+#gretsch {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:25%;
+	}
+	
+/*Style for the form on the quiz page*/
+form {
+	font-size:125%;
+	float:left;
+	}
+
+/*Style for the questions on the quiz page*/
+b {
+	color:#DF2B77;
+	font-size:105%;
+	}
+	
+/*Style for the answers on the quiz page*/
+h2.answer {
+	font-size:150%;
+	color:#DF2B77;
+	float:right;
+	}
+	
+/*Style for the feedback on the entire quiz*/
+h2.total {
+	font-size:175%;
+	color:#DF2B77;
+	float:left;
+	}
+	
+/*Style for the button on the quiz page*/
+#gradeButton {
+	float:none;
+	}
+	
+/*Style for the text in the header*/
+h1 {
+	text-align:left;
+	color:AE9C4E;
+	font-size:200%;
+	}
+
+/*Style for the headers of the videos on the genre and lessons page*/
+td.pink {
+	text-align:center;
+	color:#DF2B77;
+	font-size:175%;
+	font-weight:bold;
+	padding:5px;
+	}
+	
+/*Style for various important text throughout the different pages*/
+h2.pink {
+	text-align:center;
+	color:#DF2B77;
+	}
+	
+/*Style for the page explanation on the parts page*/
+h2.pink#partsofguitarttext {
+	font-size:200%;
+	}
+	
+/*Style for the important text on the lessons page*/
+h2.pink#lesson {
+	text-align:left;
+	margin-left:25px;
+	font-size:150%;
+	}
+
+/*Style for the text that appears when the user hovers of parts of the guitar on the parts page*/
+h2.pink#hovertext {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:55%;
+	position:relative;
+	top:-550px;
+	right:-175px;
+	text-align:justify;
+	}
+	
+/*Style for the disclaimer*/
+h4 {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:35%;
+	text-align:justify;
+	color:black;
+	font-style:italic;
+	}
+
+/*Style for the youtube videos on the genre and lessons pages*/
+iframe {
+	display:block;
+	width:560px;
+	height:315px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+/*Style for the acoustic guitar image on the parts page*/
+#hoverimg {
+	position:relative;
+	left:-500px;
+	top:7px;
+	opacity:;
+	}
+
+/*Style for the div in which the canvas is contained on the parts page*/
+#div1 {
+	float:left;
+	}
+	
+/*Style for the image of the electric guitar on the parts page*/
+#strat {
+	float:right;
+	position:relative;
+	top:-625px;
+	right:-100;
+	}
+
+/*Style for the canvas on the parts page*/
+canvas {
+	background-color:white;
+	}
+
+/*Style for the table on the genres page*/
+#genres {
+	text-align:center;
+	margin-top:10px;
+	}
+	
+/*Style for the links in the navigation bar*/
+td.link {
+	font-size:150%;
+	color:#4E8309;
+	background-color:#C2FA7A;
+	position:relative;
+	-webkit-animation:slidein 1s;
+	}
+	
+/*Style for the links in the navigation bar when unvisited and when already visited*/
+td.link:link, td.link:visited{
+	color:#4E8309;
+	background-color:#C2FA7A;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+/*Stye for the links in the navigation bar when hovered over*/
+td.link:hover{
+	background-color:#4E8309;
+	color:#C2FA7A;
+	cursor:pointer;
+	}
+
+/*Style for the links on the lessons page when unvisited and when already visited*/
+a.pinklink:link, a.pinklink:visited {
+	color:#423EA4;
+	font-size:125%;
+	}
+	
+/*Style for the links on the lessons page when they are being clicked*/
+a.pinklink:active {
+	color:#DF2B77;
+	}
+
+/*animation which causes the header to fade in*/
+@-webkit-keyframes pageloader {
+	0% {opacity:0;}
+	100%{opacity:1;}
+	}
+	
+/*animation which causes the navigation bar to slide down into position*/
+@-webkit-keyframes slidein {
+	0% {top:-50px;opacity:0;}
+	100%{top:0;opacity:1;}
+	}

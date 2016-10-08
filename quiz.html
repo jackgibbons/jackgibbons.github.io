@@ -1,0 +1,180 @@
+<!DOCKTYPE html>
+<html>
+<! Jack Gibbons 13 Dec 2013, Semester Project >
+<! URL: http://students.imsa.edu/~jgibbons/quiz.html >
+<! Purpose: Provide the user with feedback about their learning.>
+<! Things to do:
+	Mouse over navigation bar
+	Watch the pretty animations
+	Answer the questions and automatically receive feedback on the right side of the screen
+	Press the Grade Yourself button at any point to receive feedback on your overall success throughout the whole quiz (feedback appears below the Grade Yourself button)
+	>
+<head>
+<link rel="stylesheet" type="text/css" href="s2project.css"/>
+<script>
+//variables
+var grade = new Array();
+for(var j=0; j<5; j++)
+{
+	grade[j]=0;
+}
+var totaled = 0;
+var finaltext;
+var i;
+
+//changes the text to let the user know if they answered the question correctly or not.
+//for question 1
+function correct1()
+{
+	document.getElementById("q1").innerHTML="That's correct!";
+	grade[0] = 1;
+}
+function false1()
+{
+	document.getElementById("q1").innerHTML="Try again.";
+	grade[0] = 0;
+}
+
+//for question 2
+function correct2()
+{
+	document.getElementById("q2").innerHTML="That's correct!";
+	grade[1] = 1;
+}
+function false2()
+{
+	document.getElementById("q2").innerHTML="Try again.";
+	grade[1] = 0;
+}
+
+//for question 3
+function correct3()
+{
+	document.getElementById("q3").innerHTML="That's correct!";
+	grade[2] = 1;
+}
+function false3()
+{
+	document.getElementById("q3").innerHTML="Try again.";
+	grade[2] = 0;
+}
+
+//for question 4
+function correct4()
+{
+	document.getElementById("q4").innerHTML="That's correct!";
+	grade[3] = 1;
+}
+function false4()
+{
+	document.getElementById("q4").innerHTML="Try again.";
+	grade[3] = 0;
+}
+
+//for question 5
+function correct5()
+{
+	document.getElementById("q5").innerHTML="That's correct!";
+	grade[4] = 1;
+}
+function false5()
+{
+	document.getElementById("q5").innerHTML="Try again.";
+	grade[4] = 0;
+}
+
+//runs when the user clicks the button: Grade Yourself
+//tells the user how many questions were answer correctly in total
+function gradeQuiz()
+{
+	for (i=0;i<5;i++)
+	{
+		totaled=totaled+grade[i];
+	}
+	totaled=totaled.toString();
+	finaltext="You have answered  "+ totaled + " out of 5 questions correctly.";
+	document.getElementById("grader").innerHTML=finaltext;
+	totaled=0;
+}
+</script>
+</head>
+<body>
+<div id="header">
+	<div class="headerpadding">
+		<! Title>
+		<h1>Quiz Yourself</h1>
+	</div>
+</div>
+<! Navigation Bar>
+<div id="links" width="100%">
+	<table width="100%">
+		<tr>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'index.html'">Home</td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'genre.html'">Genres Featuring Guitar</td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'parts.html'">Parts of the Guitar</td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'lessons.html'">Guitar Lessons</td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'quiz.html'">Quiz Yourself</td>
+		</tr>
+	</table>
+</div>
+<div id="main">
+	<div class="padding">
+		<!Question 1>
+		<form>
+			<b>1)&nbsp&nbsp Which of the following is NOT a genre that prominently features guitar?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b><br/>
+			<input type = "radio" name="question" value="1" onclick="false1()"/> 1. Rock and Roll<br/>
+			<input type = "radio" name="question" value="2" onclick="false1()"/> 2. Metal<br/>
+			<input type = "radio" name="question" value="3" onclick="correct1()"/> 3. Dubstep<br/>
+			<input type = "radio" name="question" value="4" onclick="false1()"/> 4. Country<br/>
+		</form>
+		<h2 class="answer" id="q1"></h2>
+		
+		<!Question 2>
+		<form>
+			<b>2)&nbsp&nbsp What is the acoustic guitar's equivalent to the bridge of the electric guitar?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b><br/>
+			<input type = "radio" name="question" value="1" onclick="false2() "/> 1. Neck<br/>
+			<input type = "radio" name="question" value="2" onclick="correct2()"/> 2. Saddle<br/>
+			<input type = "radio" name="question" value="3" onclick="false2()"/> 3. Vibrato Arm<br/>
+			<input type = "radio" name="question" value="4" onclick="false2()"/> 4. Head<br/>
+		</form>
+		<h2 class="answer" id="q2"></h2>
+
+		<!Question 3>
+		<form>
+			<b>3)&nbsp&nbsp True or false: the pickups on an electric guitar convert the vibration of the strings into an electric signal.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b><br/>
+			<input type = "radio" name="question" value="1" onclick="correct3()"/> True<br/>
+			<input type = "radio" name="question" value="2" onclick="false3()"/> False<br/>	
+		</form>
+		<h2 class="answer" id="q3"></h2>
+		
+		<!Question 4>
+		<form>
+			<b>4)&nbsp&nbsp At what angle should the picking arm lie across the guitar?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b><br/>
+			<input type = "radio" name="question" value="1" onclick="correct4() "/> 1. 45 degrees<br/>
+			<input type = "radio" name="question" value="2" onclick="false4()"/> 2. 90 degrees<br/>
+			<input type = "radio" name="question" value="3" onclick="false4()"/> 3. 30 degrees<br/>
+			<input type = "radio" name="question" value="4" onclick="false4()"/> 4. 20 degrees<br/>
+		</form>
+		<h2 class="answer" id="q4"></h2>
+		
+		<!Question 5>
+		<form>
+			<b>5)&nbsp&nbsp What number is used to represent the index finger in tab and chord diagrams?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b><br/>
+			<input type = "radio" name="question" value="1" onclick="false5() "/> 1. 4<br/>
+			<input type = "radio" name="question" value="2" onclick="correct5()"/> 2. 1<br/>
+			<input type = "radio" name="question" value="3" onclick="false5()"/> 3. 0<br/>
+			<input type = "radio" name="question" value="4" onclick="false5()"/> 4. 2<br/>
+		</form>
+		<h2 class="answer" id="q5"></h2>
+		
+		<!Creates the grade yourself button and moves it down into the correct position>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<button id="gradeButton" onclick="gradeQuiz()">Grade Yourself</button><br/>
+		
+		<! Text area to be filled when the user clicks the grade yourself button>
+		<h2 class="total" id="grader"></h2>
+	</div>
+</div>
+
+</body>
+</html>

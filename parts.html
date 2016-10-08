@@ -1,0 +1,559 @@
+<!DOCKTYPE html>
+<html>
+<! Jack Gibbons 13 Dec 2013, Semester Project >
+<! URL: http://students.imsa.edu/~jgibbons/parts.html >
+<! Purpose: Provide the user with explanations of the different parts of both electric and acoustic guitars.>
+<! Things to do:
+	Mouse over navigation bar
+	Watch the pretty animations
+	Look at the images, particularly the acoustic guitar which is drawn from scratch on the canvas
+	Mouse over the guitars
+	Mouse over the strings to hear those strings played.
+	>
+<head>
+<link rel="stylesheet" type="text/css" href="s2project.css"/>
+<script>
+//variables
+var c1;
+var ctx1;
+var img;
+
+function draw()
+{
+	//defining the canvas
+	c1=document.getElementById("myCanvas1");
+	ctx1=c1.getContext("2d");
+	
+	//rotating the canvas -90 degrees so that the guitar is drawn up and down isntead of right to left
+	ctx1.rotate(-90*Math.PI/180);
+	//ctx1.translate(-625,50);
+	//makes the drawn guitar larger
+	ctx1.scale(1.25,1.25);
+	
+	//draws the acoustic guitar on the left canvas
+	drawAcoustic();
+}
+
+function drawAcoustic()
+{
+	//back of guitar
+	ctx1.beginPath();
+	ctx1.moveTo(60,34);
+	ctx1.bezierCurveTo(-10,45,-10,215,60,215);
+	ctx1.quadraticCurveTo(100,215,150,190);
+	ctx1.quadraticCurveTo(170,180,190,188);
+	ctx1.quadraticCurveTo(250,205,252,132);
+	ctx1.lineTo(207,132);
+	ctx1.lineTo(207,107);
+	ctx1.lineTo(252,107);
+	ctx1.quadraticCurveTo(250,34,190,56);
+	ctx1.quadraticCurveTo(170,64,150,54);
+	ctx1.quadraticCurveTo(100,34,60,34);
+	ctx1.fillStyle="#DEB887";
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+
+	//neck of the guitar
+	ctx1.beginPath();
+	ctx1.moveTo(207,132);
+	ctx1.lineTo(207,107);
+	ctx1.lineTo(420,107);
+	ctx1.lineTo(420, 132);
+	ctx1.lineTo(207,132);
+	ctx1.fillStyle="#352A1B";
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	
+	//frets
+	ctx1.beginPath();
+	ctx1.strokeStyle="#C0C0C0";
+	ctx1.moveTo(402,107);
+	ctx1.lineTo(402,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret2
+	ctx1.beginPath();
+	ctx1.moveTo(385,107);
+	ctx1.lineTo(385,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret3
+	ctx1.beginPath();
+	ctx1.moveTo(368,107);
+	ctx1.lineTo(368,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret4
+	ctx1.beginPath();
+	ctx1.moveTo(352,107);
+	ctx1.lineTo(352,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret5
+	ctx1.beginPath();
+	ctx1.moveTo(337,107);
+	ctx1.lineTo(337,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret6
+	ctx1.beginPath();
+	ctx1.moveTo(322,107);
+	ctx1.lineTo(322,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret7
+	ctx1.beginPath();
+	ctx1.moveTo(308,107);
+	ctx1.lineTo(308,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret8
+	ctx1.beginPath();
+	ctx1.moveTo(295,107);
+	ctx1.lineTo(295,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret9
+	ctx1.beginPath();
+	ctx1.moveTo(282,107);
+	ctx1.lineTo(282,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret10
+	ctx1.beginPath();
+	ctx1.moveTo(270,107);
+	ctx1.lineTo(270,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret11
+	ctx1.beginPath();
+	ctx1.moveTo(259,107);
+	ctx1.lineTo(259,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret12
+	ctx1.beginPath();
+	ctx1.moveTo(248,107);
+	ctx1.lineTo(248,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret13
+	ctx1.beginPath();
+	ctx1.moveTo(238,107);
+	ctx1.lineTo(238,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret14
+	ctx1.beginPath();
+	ctx1.moveTo(229,107);
+	ctx1.lineTo(229,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret15
+	ctx1.beginPath();
+	ctx1.moveTo(220,107);
+	ctx1.lineTo(220,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	//fret16
+	ctx1.beginPath();
+	ctx1.moveTo(211,107);
+	ctx1.lineTo(211,132);
+	ctx1.stroke();
+	ctx1.closePath();
+	ctx1.strokeStyle="black";
+	
+	//hole
+	ctx1.beginPath();
+	ctx1.arc(180, 120, 25, 0, 2*Math.PI);
+	ctx1.fillStyle="black";
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	
+	//bridge
+	ctx1.beginPath();
+	ctx1.fillStyle="#4E2F2F";
+	ctx1.rect(105,87,15,66);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	
+	//head
+	ctx1.beginPath();
+	ctx1.fillStyle="#4E2F2F";
+	ctx1.rect(420,103,70,33);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	
+	//strings
+	//low e string
+	ctx1.beginPath();
+	ctx1.strokeStyle="#696969";
+	ctx1.fillStyle="#F6F9F9";
+	ctx1.moveTo(110,110);
+	ctx1.lineTo(430,110);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	//a string
+	ctx1.beginPath();
+	ctx1.fillStyle="#F6F9F9";
+	ctx1.moveTo(110,115);
+	ctx1.lineTo(455,115);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	//d string
+	ctx1.beginPath();
+	ctx1.fillStyle="#F6F9F9";
+	ctx1.moveTo(110,118);
+	ctx1.lineTo(480,118);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	//g string
+	ctx1.beginPath();
+	ctx1.fillStyle="#F6F9F9";
+	ctx1.moveTo(110,122);
+	ctx1.lineTo(480,122);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	//b string
+	ctx1.beginPath();
+	ctx1.fillStyle="#F6F9F9";
+	ctx1.moveTo(110,125);
+	ctx1.lineTo(455,125);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	//high e strings
+	ctx1.beginPath();
+	ctx1.fillStyle="#F6F9F9";
+	ctx1.moveTo(110,129);
+	ctx1.lineTo(430,129);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	ctx1.strokeStyle="black";
+	
+	//tuning pegs
+	//right peg 1
+	ctx1.beginPath();
+	ctx1.fillStyle="#696969";
+	ctx1.moveTo(430,136);
+	ctx1.bezierCurveTo(420,145,445,145,435,136);
+	ctx1.lineTo(430,136);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	//right peg 2
+	ctx1.beginPath();
+	ctx1.moveTo(450,136);
+	ctx1.bezierCurveTo(440,145,465,145,455,136);
+	ctx1.lineTo(430,136);
+	ctx1.fill();
+	ctx1.stroke();
+	ctx1.closePath();
+	//right peg 3
+	ctx1.beginPath();
+	ctx1.moveTo(470,136);
+	ctx1.bezierCurveTo(460,145,485,145,475,136);
+	ctx1.lineTo(430,136);
+	ctx1.fill();
+	ctx1.stroke();
+	//left peg 1
+	ctx1.beginPath();
+	ctx1.moveTo(430,103);
+	ctx1.bezierCurveTo(420,92,445,92,435,103);
+	ctx1.lineTo(430,103);
+	ctx1.fill();
+	ctx1.stroke();
+	//left peg 2
+	ctx1.beginPath();
+	ctx1.moveTo(450,103);
+	ctx1.bezierCurveTo(440,92,465,92,455,103);
+	ctx1.lineTo(450,103);
+	ctx1.fill();
+	ctx1.stroke();
+	//left peg 3
+	ctx1.beginPath();
+	ctx1.moveTo(470,103);
+	ctx1.bezierCurveTo(460,92,485,92,475,103);
+	ctx1.lineTo(470,103);
+	ctx1.fill();
+	ctx1.stroke();
+}
+
+//functions which are run on mouseover to change the descriptive text
+//body of the acoustic guitar
+function guitarbody()
+{
+	document.getElementById("hovertext").innerHTML='This is the body of the guitar. The body is the central part of the guitar. Not only does it provide a hollow area in which the sound of the strings can be amplified, but it also gives structure to the guitar.';
+}
+//tuning peg
+function peg()
+{
+	document.getElementById("hovertext").innerHTML='These pegs can be turned to tune the guitar. This works because as the peg is turned, the string is either tightened or loosened, which affects the pitch of the note.';
+}
+//head
+function headofguitar()
+{
+	document.getElementById("hovertext").innerHTML='This is the head of the guitar, where the tunings pegs are located, and the strings end.';
+}
+//string
+function string()
+{
+	document.getElementById("hovertext").innerHTML='This is a string. It is plucked with a pick or the fingers to create the sound. By placing fingers on the stings at any of the frets, the pitch of the note can be changed.';
+}
+//sound hole
+function hole()
+{
+	document.getElementById("hovertext").innerHTML='This is the sound hole, only present on acoustic guitars, which allows the guitar to project its sound more efficiently.';
+}
+//neck
+function neck()
+{
+	document.getElementById("hovertext").innerHTML='This is the fretboard, also called the neck or fingerboard. The strings lay against the neck, and the frets line the neck.';
+}
+//fret
+function fret()
+{
+	document.getElementById("hovertext").innerHTML='This is a fret. Frets are metal ridges embedded into the neck of the guitar. By pressing the strings against the frets, notes can be played.';
+}
+//saddle
+function saddle()
+{
+	document.getElementById("hovertext").innerHTML='This is the saddle. On an acoustic guitar, this is where the strings are attached to the body of the guitar below the sound hole.';
+}
+//bridge
+function bridge()
+{
+	document.getElementById("hovertext").innerHTML='This is the bridge. On an electric guitar, this is where the strings are attached to the body of the guitar below the pickups.';
+}
+//pickup
+function pickup()
+{
+	document.getElementById("hovertext").innerHTML='This is the pickup. This replaces the sound hole of the acoustic guitar and detects the vibration of the strings and converts that vibration into an electrical signal.';
+}
+//tone or volume control
+function control()
+{
+	document.getElementById("hovertext").innerHTML='This is a volume or tone control. They can be used to change the volume of the guitar and how it sounds.';
+}
+//output jack
+function output()
+{
+	document.getElementById("hovertext").innerHTML='This is an ouput jack. This is where the electrical signal created by the pickups leaves the guitar through a cable to an amplifier.';
+}
+//body of the electric guitar
+function electricbody()
+{
+	document.getElementById("hovertext").innerHTML='This is the body of the guitar. Unlike acoustic guitars, which have to be hollow, most electric guitar bodies are made of solid wood covered by with a hard polymer finish.';
+}
+//pickguard
+function pickguard()
+{
+	document.getElementById("hovertext").innerHTML='This is the pickguard. Its purpose is to protect the finish of the body of the guitar from being scratched by the pick. Despite not being pictured on the acoustic guitar here, most acoustic guitars will also have a pickguard.';
+}
+//vibrato arm
+function vibrato()
+{
+	document.getElementById("hovertext").innerHTML='This is the vibrato arm. Present on most electric guitars, it provides an easy to add vibrato to a note. By wiggling the arm up and down, the bridge is shifted slightly as well, stretch and relaxing hte strings. This causes a wavering sound which is often desirable.';
+}
+
+//This function is run onmouseout so that the text does not stay on the screen
+function reset()
+{
+	document.getElementById("hovertext").innerHTML='';
+}
+</script>
+</head>
+<body onload="draw()">
+<div id="header">
+	<div class="headerpadding">
+		<! Title>
+		<h1>Parts of the Guitar</h1>
+	</div>
+</div>
+<! Navigation Bar>
+<div id="links" width="100%">
+	<table width="100%">
+		<tr>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'index.html'"> Home </td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'genre.html'"> Genres Featuring Guitar</td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'parts.html'">Parts of the Guitar</td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'lessons.html'">Guitar Lessons</td>
+			<td width="20%" align="center" class="link"  onclick="window.location.href = 'quiz.html'">Quiz Yourself</td>
+		</tr>
+	</table>
+</div>
+<div id="mainforpart">
+	<! Page explanation>
+	<h2 class="pink" id="partsofguitarttext"> Hover over any part of the guitar for an explanation. </h2>
+	<!Canvas for the acoustic guitar to be drawn on>
+	<div id="div1"><canvas id="myCanvas1" width="500" height="625"/></div>
+	<!Image of the acoustic guitar for the map>
+	<img id="hoverimg" src="drawnacoustic.png" usemap="#acousticmap"/>
+	<! Image of the electric guitar>
+	<img id="strat" style="height:625px;" src="strat.png" usemap="#electricmap"/>
+	<! Place for the explanation of the whichever part of the guitar is being hovered over>
+	<h2 class="pink" id="hovertext"></h2>
+</div>
+
+<! Map of the position of all the different parts of the electric guitar.>
+<map name="electricmap">
+	<! Vibrato arm>
+	<area shape="poly" coords="335,540,356,487,364,445,358,445,350,485,330,533,335,540" onmouseover="vibrato()" onmouseout="reset()">
+	
+	<!Tuning pegs>
+	<area shape="circle" coords="285,94,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="289,80,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="293,66,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="297,51,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="300,37,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="305,23,6" onmouseover="peg()" onmouseout="reset()">
+	
+	<!Frets>
+	<area shape="rect" coords="297,149,324,150" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="297,169,324,171" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="297,169,324,190" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="296,208,325,210" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="296,226,325,228" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="296,242,325,245" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="296,258,325,260" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="295,273,326,275" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="295,287,326,289" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="295,301,326,303" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="294,313,326,315" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="294,325,326,327" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="294,336,327,338" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="294,346,327,349" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="294,357,327,359" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="293,367,327,368" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="293,375,327,377" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="293,383,327,386" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="293,391,328,394" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="293,399,328,401" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="293,405,328,408" onmouseover="fret()" onmouseout="reset()">
+	
+	<!Strings>
+	<area shape="rect" coords="298,103,295,520" onmouseover="string(); lowE.play()" onmouseout="reset()">
+	<area shape="rect" coords="303,88,300,520" onmouseover="string(); A.play()" onmouseout="reset()">
+	<area shape="rect" coords="308,75,307,520" onmouseover="string(); D.play()" onmouseout="reset()">
+	<area shape="rect" coords="312,62,313,520" onmouseover="string(); G.play()" onmouseout="reset()">
+	<area shape="rect" coords="316,49,320,520" onmouseover="string(); B.play()" onmouseout="reset()">
+	<area shape="rect" coords="320,35,327,520" onmouseover="string(); E.play()" onmouseout="reset()">
+	
+	<!Tone and Volume controls>
+	<area shape="circle" coords="346,508,7" onmouseover="control()" onmouseout="reset()">
+	<area shape="circle" coords="369,520,7" onmouseover="control()" onmouseout="reset()">
+	<area shape="circle" coords="388,537,7" onmouseover="control()" onmouseout="reset()">
+	<area shape="poly" coords="363,482,381,503,379,506,359,485,363,482" onmouseover="control()" onmouseout="reset()">
+	
+	<!Output jack>
+	<area shape="poly" coords="358,544,390,564,382,577,349,555,358,544" onmouseover="output()" onmouseout="reset()">
+	
+	<!Bridge>
+	<area shape="rect" coords="287,519,333,548" onmouseover="bridge()" onmouseout="reset()">
+	
+	<!Pickups>
+	<area shape="rect" coords="288,422,331,434" onmouseover="pickup()" onmouseout="reset()">
+	<area shape="rect" coords="288,459,331,471" onmouseover="pickup()" onmouseout="reset()">
+	<area shape="poly" coords="291,490,334,499,329,508,287,501,291,490" onmouseover="pickup()" onmouseout="reset()">
+	
+	<! Neck>
+	<area shape="poly" coords="297,123,324,123,327,410,292,410,297,123" onmouseover="neck()" onmouseout="reset()">
+	
+	<! Head>
+	<area shape="poly" coords="297,123,288,108,316,13,331,12,341,25,332,54,336,88,323,106,324,123,297,123" onmouseover="headofguitar()" onmouseout="reset()">
+	
+	<! Pickguard>
+	<area shape="poly" coords="380,378,388,399,373,445,373,464,402,545,390,551,357,526,280,527,267,507,266,486,283,432,277,392,344,417,370,406,380,378" onmouseover="pickguard()" onmouseout="reset()">
+	
+	<!Body>
+	<area shape="poly" coords="244,327,222,354,222,383,240,450,211,533,214,572,269,611,360,611,407,578,409,534,379,454,396,400,380,368,371,376,360,405,330,402,252,368,244,327" onmouseover="electricbody()" onmouseout="reset()">
+</map>
+
+<! Map of the position of all the different parts of the acoustic guitar.>
+<map name="acousticmap">
+	<! The body>
+	<area shape="poly" coords="216,303,254,307,287,334,288,369,279,403,321,542,303,581,231,608,181,607,121,587,91,544,97,492,121,418,124,395,111,352,118,325,143,307,180,303,181,365,168,380,167,400,184,427,184,466,157,466,157,488,242,488,243,466,213,465,213,427,231,403,232,380,217,365,216,303" onmouseover="guitarbody()" onmouseout="reset()">
+	
+	<!The tuning pegs>
+	<area shape="circle" coords="173,27,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="173,52,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="173,77,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="224,27,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="224,52,6" onmouseover="peg()" onmouseout="reset()">
+	<area shape="circle" coords="224,77,6" onmouseover="peg()" onmouseout="reset()">
+	
+	<! The frets>
+	<area shape="rect" coords="182,115,215,116" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,136,215,137" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,157,215,158" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,177,215,178" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,196,215,197" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,215,215,216" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,232,215,233" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,248,215,249" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,265,215,266" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,280,215,281" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,293,215,294" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,306,215,307" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,320,215,321" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,331,215,332" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,342,215,343" onmouseover="fret()" onmouseout="reset()">
+	<area shape="rect" coords="182,353,215,354" onmouseover="fret()" onmouseout="reset()">
+	
+	<! The strings>
+	<area shape="rect" coords="186,79,187,479" onmouseover="string(); lowE.play()" onmouseout="reset(); lowE.stop()">
+	<area shape="rect" coords="192,50,193,479" onmouseover="string(); A.play()" onmouseout="reset(); A.stop()">
+	<area shape="rect" coords="197,19,198,479" onmouseover="string(); D.play()" onmouseout="reset(); D.stop()">
+	<area shape="rect" coords="202,19,203,479" onmouseover="string(); G.play()" onmouseout="reset(); G.stop()">
+	<area shape="rect" coords="206,50,207,479" onmouseover="string(); B.play()" onmouseout="reset(); B.stop()">
+	<area shape="rect" coords="211,79,212,479" onmouseover="string(); E.play()" onmouseout="reset(); E.stop()">
+	
+	<! The sound hole>
+	<area shape="circle" coords="199,393,33" onmouseover="hole()" onmouseout="reset()">
+	
+	<! The head>
+	<area shape="rect" coords="178,5,219,91" onmouseover="headofguitar()" onmouseout="reset()">
+	
+	<! The saddle>
+	<area shape="rect" coords="158,467,242,488" onmouseover="saddle()" onmouseout="reset()">
+	
+	<! The neck>
+	<area shape="rect" coords="183,92,216,359" onmouseover="neck()" onmouseout="reset()">
+</map>
+<! audio file to be played if the low e string is hovered over>
+<audio id="lowE">
+	<source src="101elow.wav" type="audio/wav"/>
+</audio>
+<! audio file to be played if the a string is hovered over>
+<audio id="A">
+	<source src="201a.wav" type="audio/wav"/>
+</audio>
+<! audio file to be played if the d string is hovered over>
+<audio id="D">
+	<source src="301d.wav" type="audio/wav"/>
+</audio>
+<! audio file to be played if the g string is hovered over>
+<audio id="G">
+	<source src="401g.wav" type="audio/wav"/>
+</audio>
+<! audio file to be played if the b string is hovered over>
+<audio id="B">
+	<source src="501b.wav" type="audio/wav"/>
+</audio>
+<! audio file to be played if the e string is hovered over>
+<audio id="E">
+	<source src="601e.wav" type="audio/wav"/>
+</audio>
+
+</body>
+</html>

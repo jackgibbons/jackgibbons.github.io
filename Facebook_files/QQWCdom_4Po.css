@@ -1,0 +1,50 @@
+/*!CK:2291416711!*//*1387206432,178186559*/
+
+.PlacesTypeaheadView{overflow:hidden}
+.PlacesTypeaheadViewPopulated{background:#fff;border:solid;border-width:1px 1px 2px;border-color:#333 #333 #293e6a;padding:2px 0 0 0}
+.PlacesTypeaheadView .uiScrollableArea, .PlacesTypeaheadView .uiScrollableAreaWrap{max-height:200px}
+div.PlacesTypeaheadView ul{border:0;padding:0}
+.PlacesTypeaheadView .uiDynamicMap{border-top:1px solid #ddd}
+.PlacesTypeaheadView .compact .placecreate, .PlacesTypeaheadView .places .placecreate, .PlacesTypeaheadView .compact .freeform, .PlacesTypeaheadView .places .freeform{border-top-color:#ddd;min-height:10px;padding:2px 6px 1px;text-align:center}
+div.PlacesTypeaheadView .selected{background-color:#6d84b4;border-color:#3b5998}
+.PlacesTypeaheadFocused, .PlacesTypeaheadFocused .uiTypeahead{z-index:3}
+.PlacesTypeaheadMapWrapper{line-height:0}
+._e9{overflow:hidden}
+.fbRequestList ._ea.animated, .fbRequestList .hasFollowup.animated{-webkit-transition-duration:.15s;-webkit-transition-property:height, left, width;-webkit-transition-timing-function:ease}
+.fbRequestList li div._ea{left:100%;position:absolute;top:0;visibility:hidden}
+.fbRequestList li.followupActivated
+div._ea.active{left:0%;position:relative;visibility:visible}
+.fbRequestList .hasFollowup{position:relative;left:0%;visibility:visible}
+.fbRequestList .followupActivated .hasFollowup{position:absolute;left:-100%;visibility:hidden}
+.fbRequestList .async_saving{position:relative}
+.fbRequestList .loadingIndicator{display:none;top:50%;left:50%;margin:-5px 0 0 -8px;position:absolute}
+.fbRequestList .async_saving .loadingIndicator{display:block}
+.fbRequestList .async_saving .addButtonWrapper, .fbRequestList .async_saving .uiButton{visibility:hidden}
+div.fbRequestList .addButtonWrapper{display:inline-block;margin-right:5px;text-align:left}
+.fbRequestList .addButtonWrapper .FriendListMenu li, #fbRequestsFlyout .addButtonWrapper .FriendListMenu li{overflow:hidden;padding:0;text-overflow:ellipsis;white-space:nowrap}
+.fbRequestList .networkContextWrapper{margin:2px 0}
+.fbRequestList div.requestStatusBlock{display:block;overflow:hidden;word-break:break-word}
+.fbFriendRequestMsgText{color:#666}
+.fbFriendRequestMsgSeeMore{color:#6d83b3}
+.fbRequestList .localeCustomLayout .auxiliary{padding-bottom:3px;padding-top:4px;text-align:left}
+.fbCompaniesList{vertical-align:text-bottom}
+.fbRequestList .localeCustomLayout .requestLabel{margin-top:-2px;padding-bottom:2px;padding-top:0}
+.fbRequestList .jewelHoverPic .uiScaledImageContainer .img, .friendBrowserCheckboxResults .jewelHoverPic .uiScaledImageContainer .img{height:auto;width:auto}
+.fbRequestList .jewelHoverPic .scaledImageFitWidth.img, .friendBrowserCheckboxResults .scaledImageFitWidth.img{min-height:50px;width:50px}
+.fbRequestList .jewelHoverPic > div, .friendBrowserCheckboxResults .jewelHoverPic > div{height:50px;width:50px}
+.uiComboInput{border:1px solid #bdc7d8;display:inline-block;zoom:1}
+.uiComboInput .inputtext, .uiComboInput .uiTypeahead, .uiComboInput .uiTypeahead .wrap{border:transparent}
+.uiComboInput .uiTypeahead{display:inline-block;vertical-align:top;zoom:1}
+.uiComboInput .comboButton{margin:-1px;position:relative;z-index:2;zoom:1}
+._pts{position:relative}
+.uiContextualLayer ._ptt{position:absolute;top:0}
+._pts ._ptt{position:static;top:auto}
+.uiContextualLayer ._4-th{bottom:0;position:absolute}
+._pts ._4-th{bottom:auto;position:static}
+.objectListItem{padding-bottom:8px;padding-top:8px}
+.passive .objectListItem{color:gray}
+.objectListItem .auxiliary{text-align:right}
+.uiTypeaheadView .noTrucating .text, .uiTypeaheadView .noTrucating .subtext, .uiTypeaheadView .noTrucating .category{text-overflow:clip;white-space:normal}
+
+#bootloader_dC7as { height: 42px; }
+.bootloader_dC7as { display:block !important; }
